@@ -19,7 +19,7 @@ To update openiboot:
 		a. For iPod touch: PLATFORM=IPOD make
 		b. For iPhone 2G: PLATFORM=IPHONE make
 		c. For iPhone 3G: PLATFORM=3G make
-		d. For iPod touch 2g: PLATFORM=IPOD2G
+		d. For iPod touch 2g: PLATFORM=IPOD2G make
 	2. Compile all in client/: cd client && make all && cd .. (requires libusb, libreadline and pthread)
 	3. Launch openiboot
 	4. Run the client: sudo client/oibc
