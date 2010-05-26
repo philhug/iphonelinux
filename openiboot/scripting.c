@@ -32,6 +32,8 @@ int scriptCommand(char* command){
 	return success;
 }
 
+#ifndef SMALL
+
 void startScripting(char* loadedFrom)
 {
 	uint32_t size = 0;
@@ -163,3 +165,4 @@ void startScripting(char* loadedFrom)
 	free(bufferLine);
 	free(address);
 }
+#endif
