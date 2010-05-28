@@ -5,10 +5,18 @@
 
 // gpioicBase
 // Device
+#ifdef DEVICE_IPOD2G
+#define GPIOIC 0x39700000	/* probably a part of the system controller */
+
+// gpioBaseAddress
+#define GPIO 0x3CF00000
+
+#else
 #define GPIOIC 0x39A00000	/* probably a part of the system controller */
 
 // gpioBaseAddress
 #define GPIO 0x3E400000
+#endif
 
 // Registers
 #define GPIO_INTLEVEL 0x80

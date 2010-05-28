@@ -28,10 +28,15 @@
 #define POWER_ID_EPOCH(x) ((x) >> 24)
 
 // Values
+#ifdef CONFIG_IPOD2G
+#define POWER_CONFIG0_RESET 0x1021002
+#define POWER_CONFIG1_RESET 0x0
+#define POWER_CONFIG2_RESET 0x0
+#else
 #define POWER_CONFIG0_RESET 0x1123009
 #define POWER_CONFIG1_RESET 0x20
 #define POWER_CONFIG2_RESET 0x0
-
+#endif
 
 #endif
 

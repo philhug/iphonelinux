@@ -11,6 +11,10 @@
 #define WMCODEC_I2C 0
 #endif
 
+#ifdef CONFIG_IPOD2G
+#define WMCODEC_I2C 0 //TODO don't know
+#endif
+
 #ifdef CONFIG_3G
 #define WMCODEC_I2C 0
 #define WMCODEC_I2C_SLAVE_ADDR 0x36

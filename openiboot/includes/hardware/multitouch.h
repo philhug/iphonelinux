@@ -6,6 +6,9 @@
 #ifdef CONFIG_IPHONE
 #define MT_GPIO_POWER 0x804
 #define MT_ATN_INTERRUPT 0xa3
+#elsifdef CONFIG_IPOD2G
+#define MT_GPIO_POWER 0xA06
+#define MT_ATN_INTERRUPT 0x6d
 #else
 #define MT_GPIO_POWER 0x701
 #define MT_ATN_INTERRUPT 0x9b
@@ -14,6 +17,9 @@
 #ifdef CONFIG_3G
 #define MT_SPI 1
 #define MT_SPI_CS GPIO_SPI1_CS0
+#elsifdef CONFIG_IPOD2G
+#define MT_SPI 4
+#define MT_SPI_CS GPIO_SPI4_CS0
 #else
 #define MT_SPI 2
 #define MT_SPI_CS GPIO_SPI2_CS0

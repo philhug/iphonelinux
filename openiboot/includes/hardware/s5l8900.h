@@ -31,6 +31,9 @@
 #ifdef CONFIG_3G
 #define AMC0 0x38500000
 #define ROM 0x50000000
+#elsifdef CONFIG_IPOD2G
+#define AMC0 0x38500000
+#define ROM 0x20000000 // don't know
 #else
 #define AMC0 0x22000000
 #define ROM 0x20000000
