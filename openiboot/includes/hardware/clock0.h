@@ -3,7 +3,11 @@
 
 #include "hardware/s5l8900.h"
 
+#ifndef CONFIG_IPOD2G
 #define CLOCK0 0x38100000	/* the clocks are probably also parts of the system controller */
+#else
+#define CLOCK0 0x3E00000C
+#endif
 
 // Registers
 #define CLOCK0_CONFIG 0x0

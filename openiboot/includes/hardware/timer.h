@@ -8,8 +8,11 @@
 #define PiezoTimer 1
 
 // Devices
-
+#ifndef CONFIG_IPOD2G
 #define TIMER 0x3E200000
+#else
+#define TIMER 0x3C700000
+#endif
 
 // Registers
 
